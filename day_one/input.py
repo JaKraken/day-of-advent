@@ -1029,18 +1029,17 @@ value = '''+19
 -74755'''.strip().split('\n')
 
 
-def main(file):
-    lst = list(map(int, file))
-    print('1: %d' % sum(lst))
+def main():
+    inputList = list(map(int, file))
 
     total = 0
     frequencySet = set()
     while True:
-        for line in lst:
+        for line in inputList:
             total += line
             if total in frequencySet:
                 return 'matching frequency %d' % total
             frequencySet.add(total)
 
 
-print(main(value))
+print(main())

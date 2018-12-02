@@ -294,8 +294,7 @@ def findSimilarId(fileIds):
             if (compareStrings(fileIds[i], fileIds[j])):
                 similar.append(fileIds[i])
                 similar.append(fileIds[j])
-
-    return similar
+                return similar
 
 def removeDifferences(stringsArray):
     basestring = ''
