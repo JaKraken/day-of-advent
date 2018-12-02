@@ -1030,7 +1030,7 @@ value = '''+19
 
 
 def main():
-    inputList = list(map(int, file))
+    inputList = list(map(int, value))
 
     total = 0
     frequencySet = set()
